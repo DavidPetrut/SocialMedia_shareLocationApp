@@ -1,0 +1,248 @@
+/* this is my main website colors that I use everywhere */
+.color-main {
+  color: #B4F4DE;
+}
+.bg-main {
+  background-color: #B4F4DE;
+}
+.color-main-open {
+  color: #DEF8EF;
+}
+.bg-main-open {
+  background-color: #DEF8EF;
+}
+.color-second {
+  color: #30C48D;
+}
+.bg-second {
+  background-color: #30C48D;
+}
+.color-third {
+  color: #374151;
+}
+.bg-third {
+  background-color: #374151;
+}
+/* main colors stop here */
+
+.custom-shadow {
+  box-shadow: 0 4px 6px -1px rgba(55, 65, 81, 0.1), 0 2px 4px -2px rgba(55, 65, 81, 0.1), 0 20px 25px -5px rgba(55, 65, 81, 0.5);
+}
+
+
+/* inputs style for login/signup */
+
+.input-focus:focus {
+  outline: none; /* Removes the default focus outline */
+  box-shadow: 0 0 0 1px #30C48D; /* Adds a blue shadow that matches the form border */
+  background-color: #30C48D; /* Darker version of the form background for focused input */
+  color: rgb(255, 255, 255); /* White text color for better readability on dark background */
+  font-weight: bold;
+}
+
+.input-field {
+  width: 100%;
+  padding: 8px;
+  background-color: #def8ef;
+  border: 2px solid #374151; /* Standard border */
+  border-radius: 0.375rem; /* Rounded corners (Tailwind's rounded-md equivalent) */
+  transition: background-color 0.3s, box-shadow 0.3s, border-color 0.3s; /* Smooth transition for visual effects */
+}
+
+.input-field:focus {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #30C48D; /* Standard border */
+  border-radius: 0.375rem; /* Rounded corners (Tailwind's rounded-md equivalent) */
+  transition: background-color 0.3s, box-shadow 0.3s, border-color 0.3s; /* Smooth transition for visual effects */
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 4px; /* Space between label and input */
+  font-size: 0.7rem; /* Smaller and more modern-looking font size (Tailwind's text-sm equivalent) */
+  color: #4a5568; /* Tailwind's text-gray-700 equivalent */
+  font-weight: bold;
+}
+
+.input-error {
+  color: #e53e3e; /* Tailwind's text-red-500 for error messages */
+  font-size: 0.75rem; /* Smaller font size for error messages */
+  margin-top: 2px; /* Small gap between input and error message */
+  margin-bottom: -20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+
+
+/* RegisterNav styles */
+.register-btn {
+  padding: 8px 16px;
+  border: 2px solid #30C48D;  /* Custom green border */
+  background-color: transparent;
+  color: #30C48D;
+  border-radius: 25px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;  /* Transition for background color only */
+  font-weight: bold;
+  display: inline-block;  /* Ensures button alignment */
+}
+
+.register-btn:hover {
+  background-color: rgba(100, 198, 162, 0.1);  /* Slight background fill on hover */
+}
+
+
+.specialPostIcons {
+  margin-top: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-size: x-large;
+}
+
+.dislike {
+  margin-top: 2px;
+}
+
+.specialLinksNavHome {
+  border-radius: 20px;
+}
+
+
+.like-active {
+  color: blue;
+  font-weight: bold;
+}
+
+.dislike-active {
+  color: blue;
+  font-weight: bold;
+}
+
+.report-active {
+  color: red;
+  font-weight: bold;
+}
+
+.specialHeight {
+  max-height: 500px;
+  min-height:  300px;
+  object-fit: cover;
+}
+
+.hoverText:hover {
+  color: #095ce2;
+}
+
+.reactionIconBackground {
+  border-radius: 25px;
+  padding-right: 2vw;
+  padding-left: 2vw
+}
+
+.icon-border {
+  border-right: 1px solid #c5c5c5;
+  padding-right: 10px;
+}
+
+.commentButton {
+  float: right;
+}
+
+.postImageClick {
+  cursor: pointer;
+}
+
+
+.tagsCSS {
+  padding: 5px 10px;
+  font-size: smaller;
+}
+
+.activeTagCSS {
+  background-color: #30C48D;
+  border-radius: 25px;
+  color: white;
+  font-weight: 600;
+}
+
+.notActiveTagCSS {
+  color: #4A5568;
+  background-color: #a0fbdc;
+  border-radius: 25px;
+}
+
+.goHomeButtonComments {
+  white-space: nowrap;
+}
+
+.profileSpecial {
+  margin-top: -140px;
+}
+
+/* autocomplete address styles */
+
+.pac-container {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.pac-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.pac-item:hover {
+  background-color: #f8f8f8;
+}
+
+.smallImgPostProfile {
+  margin-top: -4px ;
+  object-fit: cover;
+}
+
+
+.nameComments {
+  font-weight: 650;
+}
+
+
+@media (min-width: 640px) {  /* Assuming 640px is the breakpoint for larger screens */
+  .register-btn:hover {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+}
+
+
+/* hide the scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* for Internet Explorer, Edge */
+  scrollbar-width: none;  /* for Firefox */
+}
+
+
+
+/* Right-align buttons on larger screens */
+@media (min-width: 640px) {
+  nav > div {
+    justify-content: space-between;  /* Adjust container to space out logo and links */
+  }
+  .register-btn {
+    margin-right: 10px;  /* Ensure consistent margin for alignment */
+  }
+  .register-btn:hover {
+    margin: 0;
+    padding: calc(10px + 1px) calc(10px + 1px); /* Adjust padding to negate border effect */
+  }
+}
+
